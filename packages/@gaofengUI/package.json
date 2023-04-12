@@ -1,0 +1,15 @@
+{
+  "name": "@gaofeng-ui/gaofeng-ui",
+  "version": "1.0.0",
+  "description": "组件库入口",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "gaofeng",
+  "license": "ISC",
+  "dependencies": {
+    "@gaofeng/foo": "workspace:^"
+  }
+}
