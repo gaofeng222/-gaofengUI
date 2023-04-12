@@ -1,0 +1,23 @@
+{
+  "name": "@gaifeng-ui/docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
+  },
+  "keywords": [],
+  "author": "gaofeng",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "1.0.0-alpha.65"
+  },
+  "dependencies": {
+    "@gaofeng-ui/gaofeng-ui": "workspace:^",
+    "@vitepress-demo-preview/component": "^2.2.0",
+    "@vitepress-demo-preview/plugin": "^1.1.9",
+    "element-plus": "^2.3.3"
+  }
+}

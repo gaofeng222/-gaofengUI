@@ -1,8 +1,9 @@
 import { App } from 'vue'
-import Foo from './src'
+import GTest from './g-test'
 
-Foo.install = (app: App) => {
-    app.component(Foo.name, Foo)
+
+GTest.install = (app: App) => {
+    app.component(GTest.name, GTest)
 }
 
-export default Foo
+export default GTest

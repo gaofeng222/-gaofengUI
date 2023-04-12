@@ -1,9 +1,11 @@
 import { App } from 'vue'
 import '../scss/index.scss'
-import Foo from '@gaofeng/foo'
+import Foo from '@gaofeng/foo/index'
+import GDrawer from '@gaofeng/g-drawer'
 
 const components = [
-    Foo
+    Foo,
+    GDrawer
 ]
 
 const install = (app: App): void => {
