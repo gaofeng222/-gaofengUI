@@ -26,7 +26,7 @@ const sidebar: DefaultTheme.Sidebar = {
 
         },
         {
-            text: '组件', link: '/components/foo'
+            text: '组件传送门', link: '/components/foo'
         }
     ],
     '/components': [{

@@ -7,5 +7,6 @@
  * @Description: 
  */
 export const components = [
-    { text: 'Foo 组件示例', link: '/components/foo' }
+    { text: ' Test组件示例', link: '/components/foo' },
+    { text: ' GDrawer组件示例', link: '/components/g-drawer' },
 ] // 

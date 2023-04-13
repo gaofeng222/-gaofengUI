@@ -1,12 +1,13 @@
 import { App } from 'vue'
 import '../scss/index.scss'
-import Foo from '@gaofeng/foo/index'
-import GDrawer from '@gaofeng/g-drawer'
+import { GTest, GDrawer } from '@gaofeng-ui/componets'
 
 const components = [
-    Foo,
+    GTest,
     GDrawer
 ]
+
+console.log(GTest, 'GTest')
 
 const install = (app: App): void => {
     components.forEach(component => {

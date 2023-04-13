@@ -1,5 +1,5 @@
 <template>
-  <gaofeng-foo :msg="msg"></gaofeng-foo>
+  <g-test :msg="msg"></g-test>
 </template>
 
 <script lang="ts" setup>

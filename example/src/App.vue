@@ -13,7 +13,7 @@ let title = ref("这是默认标题222");
     <gaofeng-foo :msg="msg"></gaofeng-foo>
     {{ visible }}
     <button @click="showHandle">show</button>
-    <gaofeng-drawer v-model:visible="visible" v-model:title="title
+    <g-drawer v-model:visible="visible" v-model:title="title
     " direction="rtl">
       <h2>this is a title</h2>
       <template #head>
@@ -22,7 +22,7 @@ let title = ref("这是默认标题222");
       <template #footer>
         <div>这是脚步信息</div>
       </template>
-    </gaofeng-drawer>
+    </g-drawer>
   </div>
 </template>
 

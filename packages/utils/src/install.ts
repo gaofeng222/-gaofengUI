@@ -6,7 +6,7 @@ type withType = Record<string, string>
 export const withInstall = <T, E extends withType>(main: T, extra?: E) => {
     (main as SFCWithInstall<T>).install = (app: App): void => {
         for (const comp of [main, ...Object.values(extra ?? {})]) {
-            //@ts-ignore
+            // @ts-ignore
             app.component((comp.name, comp))
         }
     }
@@ -15,5 +15,7 @@ export const withInstall = <T, E extends withType>(main: T, extra?: E) => {
             (main as any)[key] = comp
         }
     }
+
+    return main as SFCWithInstall<T> & E
 }
 

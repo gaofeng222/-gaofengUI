@@ -6,6 +6,10 @@ export const fooProps = {
         type: String,
         required: true,
         default: ''
+    },
+    btnText: {
+        type: String,
+        default: '提交'
     }
 }
 

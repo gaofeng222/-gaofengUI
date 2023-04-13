@@ -1,15 +1,15 @@
 {
-  "name": "@gaofeng-ui/gaofeng-ui",
+  "name": "@gaofeng-ui/componets",
   "version": "1.0.0",
-  "description": "组件库入口",
+  "description": "all components are settled here",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "peerDependencies": {
+    "vue": "^3.2.47"
+  },
   "keywords": [],
   "author": "gaofeng",
-  "license": "ISC",
-  "dependencies": {
-    "@gaofeng-ui/componets": "workspace:^"
-  }
+  "license": "ISC"
 }

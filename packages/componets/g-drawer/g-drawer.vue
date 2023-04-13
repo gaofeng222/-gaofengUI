@@ -22,16 +22,14 @@
   </teleport>
 </template>
 
-
-<script lang="ts">
-export default {
-  name: "gaofeng-drawer"
-};
-</script>
 <script lang="ts" setup>
 import { defineEmits } from "vue";
 import { gDrawerProps, GDrawerTypes } from "./types";
 defineProps(gDrawerProps);
+
+defineOptions({
+  name: "g-drawer"
+});
 const emit = defineEmits(["update:visible", "update:title"]);
 
 const hide = () => {
@@ -116,6 +114,7 @@ $safe-area-inset-bottom: 30px;
         text-align: center;
         font-size: 12px;
         background-color: white;
+        color: #333 !important;
         // border-radius: 50%;
         border-radius: 50%;
       }

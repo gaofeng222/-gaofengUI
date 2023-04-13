@@ -9,11 +9,11 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import GaofengUI from '@gaofeng-ui/gaofeng-ui'
+import GTest from '@gaofeng-ui/gaofeng-ui'
 
 const env = import.meta.env
 console.log(env)
 const app = createApp(App)
 
-app.use(GaofengUI)
+app.use(GTest)
     .mount('#app')
