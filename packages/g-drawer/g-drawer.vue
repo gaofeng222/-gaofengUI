@@ -105,23 +105,23 @@ $safe-area-inset-bottom: 30px;
       position: absolute;
       top: 10px;
       right: 10px;
-      // opacity: 0;
-      background-color: white;
-      display: none;
+      opacity: 0;
+
+      z-index: 1000;
       span {
         display: inline-block;
         width: 30px;
         height: 30px;
         line-height: 30px;
         text-align: center;
-
         font-size: 12px;
+        background-color: white;
+        // border-radius: 50%;
         border-radius: 50%;
       }
     }
     &--visible {
       opacity: 1;
-      display: block;
     }
   }
 }
