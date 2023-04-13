@@ -9,11 +9,24 @@
 import { defineConfig } from 'vite'
 import VueJsx from '@vitejs/plugin-vue-jsx'
 import DefineOptions from "unplugin-vue-define-options/vite";//引入
-export default defineConfig({
-    plugins: [
-        VueJsx(), DefineOptions()
-    ],
-    server: {
-        port: 3100
+
+export default defineConfig(({ command }) => {
+    // let base: string
+    // if (command == 'build') {
+    //     base = '/-gaofengUI/'
+    // } else {
+    //     base = './'
+    // }
+    return {
+        base: '/-gaofengUI/',
+        plugins: [
+            VueJsx(), DefineOptions()
+        ],
+        server: {
+            port: 3100
+        },
+        build: {
+            outDir: '../dist'
+        }
     }
 })

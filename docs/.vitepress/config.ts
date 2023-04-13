@@ -40,8 +40,9 @@ export default defineConfig({
     title: '@gaofeng-ui',
     description: 'GAOFENG Vue3企业级中后台组件库',
     lang: 'cn-ZH',
-    base: '/',
+    base: '/-gaofengUI/',
     lastUpdated: true,
+    // outDir: '../dist',
     themeConfig: {
         logo: '/logo.png',
         siteTitle: '@gaofeng-ui',
