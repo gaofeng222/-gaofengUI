@@ -5,7 +5,6 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "strict": true,
-    "jsx": "preserve",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
@@ -13,8 +12,10 @@
     "skipLibCheck": true,
     "noEmit": true,
     "baseUrl": "./",
+    "allowJs": true,
+    "jsx": "preserve",
     "paths": {
-      "@/*": ["./src/*", "./src/components/*"]
+      "@/*": ["src/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
