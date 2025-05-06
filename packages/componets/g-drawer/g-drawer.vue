@@ -49,6 +49,7 @@ const showHandle = () => {
 $prefix: g-drawer;
 $safe-area-inset-bottom: 30px;
 .#{$prefix} {
+  opacity: 0;
   &--shade {
     position: fixed;
     z-index: 999;
@@ -63,14 +64,24 @@ $safe-area-inset-bottom: 30px;
       &-visible {
         bottom: 0;
         opacity: 1;
+        visibility: 1;
       }
     }
+  }
+  &--visible{
+    opacity: 1;
+    /* visibility: 1; */
   }
   &--content {
     position: fixed;
     z-index: 999;
     transition: all 0.3s ease-in-out 0s;
     padding-bottom: $safe-area-inset-bottom;
+    background: #fff;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
     // opacity: 0;
 
     &-rtl {
